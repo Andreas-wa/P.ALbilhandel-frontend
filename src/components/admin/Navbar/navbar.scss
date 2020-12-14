@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Poppins:wght@400&display=swap");
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .navItem {
+    width: 100%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: x-large;
+  }
+  #logoNavbar {
+    display: none;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+}
+@media all and (min-width: 960px) {
+  .navBar {
+    margin-top: 20px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    .navItem {
+      position: relative;
+      display: block;
+      width: auto;
+      margin-right: 10px;
+    }
+    #logoNavbar {
+      display: inline;
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
