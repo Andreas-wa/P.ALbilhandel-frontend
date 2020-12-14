@@ -10,7 +10,7 @@ import EditCar from "./components/admin/Edit_car/EditCar";
 import About from "./components/customer/About/About";
 import Home from "./components/customer/Home/Home";
 import Car from "./components/customer/Car/Car";
-import NotFound from "./components/admin/NotFound/NotFound";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
@@ -31,9 +31,6 @@ function App() {
         </Route>
         <Route path="/admin/cars/edit/:id">
           <EditCar />
-        </Route>
-        <Route path="/admin/messages/add">
-          <AddMessage />
         </Route>
         <Route path="/admin/messages/add/:id">
           <AddMessage />
