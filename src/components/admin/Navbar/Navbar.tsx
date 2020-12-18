@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Link, NavLink } from "react-router-dom";
+// import StartCars from "../Start_cars/StartCars";
+// import StartMessages from "../Start_cars/Start_messages/StartMessages";
 import "./navbar.scss";
 export default function Navbar() {
   return (
@@ -13,18 +15,22 @@ export default function Navbar() {
             alt="logoIMG"
           />
           <NavLink
+            // target={"_blank"}
+            onChange={window.location.reload}
             className="navItem"
             activeClassName="underline"
-            exact
-            to="/admin/start/cars"
+            to="/admin/cars"
           >
             Bilar
           </NavLink>
+
           <NavLink
+            // component={StartMessages}
+            target={"/admin/messages"}
             className="navItem"
             activeClassName="underline"
-            exact
-            to="/admin/start/messages"
+            to="/admin/messages"
+            onChange={window.location.reload}
           >
             Meddelanden
           </NavLink>

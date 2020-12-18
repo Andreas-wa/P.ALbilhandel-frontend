@@ -2,17 +2,16 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./components/admin/Login/Login";
-import StartCars from "./components/admin/Start_cars/StartCars";
-import StartMessages from "./components/admin/Start_messages/StartMessages";
+import StartCars from "./components/Start_cars/StartCars";
+import StartMessages from "./components/Start_messages/StartMessages";
 import AddCar from "./components/admin/Add_car/AddCar";
-import AddMessage from "./components/admin/Add_message/AddMessage";
+import AddMessage from "./components/Start_messages/Add_message/AddMessage";
 import EditCar from "./components/admin/Edit_car/EditCar";
 import About from "./components/customer/About/About";
 import Home from "./components/customer/Home/Home";
 import Car from "./components/customer/Car/Car";
 import NotFound from "./components/NotFound/NotFound";
 import Navbar from "./components/admin/Navbar/Navbar";
-
 function App() {
   return (
     <div>
@@ -24,10 +23,10 @@ function App() {
           </Route>
           <Route path="/admin">
             <Navbar />
-            <Route path="/admin/start/cars">
+            <Route path="/admin/cars">
               <StartCars />
             </Route>
-            <Route path="/admin/start/messages">
+            <Route path="/admin/messages">
               <StartMessages />
             </Route>
             <Route path="/admin/car/add">
